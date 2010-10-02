@@ -1,0 +1,61 @@
+<div id="wrap">
+
+	<div id="inner">
+		<a href="http://localhost/zendesk/want/">Reload</a>
+		<h1>Want</h1>
+			
+		<br />
+
+		<input type="submit" id="add-button" value="Add item by URL" />
+		<div class="newentry hide">
+				<input type="text" name="new-entry" id="new-entry" />
+				<input type="submit" id="submitentry" value="I want it" />
+		</div>
+		
+		<input type='hidden' id='current_page' />
+		<input type='hidden' id='show_per_page' />
+		
+		<ul class="entries">
+			<% @wishes.each do |wish| %>
+			  <li id="<%= wish.id %>" class="entry-wrap">
+				<span class="entry"><%= wish.entry %></span>
+			    <%= link_to 'Show', wish %>
+			    <%= link_to 'Edit', edit_wish_path(wish) %>
+			    <%= link_to 'Destroy', wish, :confirm => 'Are you sure?', :method => :delete %></li>
+			<% end %>
+		</ul>
+		
+		<div id='page_navigation'></div>
+
+		<br />
+	</div>
+
+</div>
+
+
+
+
+<h1>Listing wishes</h1>
+
+<table>
+  <tr>
+    <th>Entry</th>
+    <th>Type</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @wishes.each do |wish| %>
+  <tr>
+    <td><%= wish.entry %></td>
+    <td><%= wish.type %></td>
+    <td><%= link_to 'Edit', edit_wish_path(wish) %></td>
+    <td><%= link_to 'Destroy', wish, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Wish', new_wish_path %>

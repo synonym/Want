@@ -1,0 +1,164 @@
+/* v1.0 | 20080212 */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+	background: transparent;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+
+/* remember to define focus styles! */
+:focus {
+	outline: 0;
+}
+
+/* remember to highlight inserts somehow! */
+ins {
+	text-decoration: none;
+}
+del {
+	text-decoration: line-through;
+}
+
+/* tables still need 'cellspacing="0"' in the markup */
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+body {
+	background-color:#eeeeee;
+	font-family:Lucida Grande, Helvetica, Tahoma;
+
+}
+
+#wrap {
+	margin:0 auto;
+	width: 700px;
+	min-height:300px;
+	background-color:#ffffff;
+	-moz-border-radius-bottomleft:10px;
+	-moz-border-radius-bottomright:10px;
+}
+
+#inner {
+	width:650px;
+	margin:0 auto;
+	padding:25px 0 0 0;
+	min-height:275px;
+}
+
+h1 {
+	font-family:"American Typewriter", Bello Pro, Georgia;
+	font-size:52px;
+	color:#4198d0;
+	text-decoration:none;
+
+}
+
+a h1 {
+	text-decoration:none;
+
+}
+
+input#add {
+}
+
+ul.entries {
+	margin:15px 0 15px 0;	
+}
+
+ul.entries li .spinner {
+	margin:0 0 0 321px;
+}
+
+ul.entries li {
+	width:650px;
+	margin:-1px 0 0 0;
+	padding:5px 5px 5px 5px;
+	min-height:20px;
+	border-top:1px solid #e4e2e2;
+	border-bottom:1px solid #e4e2e2;
+	color:#000000;
+	font-size:14px;
+	clear:both;
+}
+
+ul.entries li .gift {
+	float:left;
+	margin:0 8px 0 0;
+}
+
+ul.entries li .entry {
+	margin:3px 0 0 0;
+	float:left;
+}
+
+.newentry {
+	margin:10px 0 10px 0;
+}
+
+input#new-url {
+	width:300px;
+}
+
+.hide {
+	display:none;
+}
+
+.msg_success {
+	margin:0 10px 0 0;
+	float:right;
+	padding:3px 5px 3px 5px;
+	background-color:#0c9a00;
+	color:#ffffff;
+	-moz-border-radius:2px;
+	font-size:13px;
+}
+
+.deletelink {
+	float:right;
+	padding:3px 5px 3px 5px;
+	color:#9a0000;
+	-moz-border-radius:2px;
+	font-size:13px;
+}
+
+a.page_link {
+	margin:5px;
+}
+
+#page_navigation {
+	width: 300px;
+	margin:0 auto;
+}
+
+#page_navigation a {
+	font-size:12px;
+	color:#0065c4;
+}
